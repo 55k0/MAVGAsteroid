@@ -1,0 +1,11 @@
+C:\Users\Njaal\Documents\MAVGAsteroid\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Njaal\Documents\MAVGAsteroid\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Njaal\Documents\MAVGAsteroid\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Njaal\Documents\MAVGAsteroid\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Njaal\Documents\MAVGAsteroid\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Njaal\Documents\MAVGAsteroid\Temp\bin\Debug\nunit.framework.dll
+C:\Users\Njaal\Documents\MAVGAsteroid\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Njaal\Documents\MAVGAsteroid\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\Njaal\Documents\MAVGAsteroid\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
+C:\Users\Njaal\Documents\MAVGAsteroid\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Njaal\Documents\MAVGAsteroid\obj\Debug\Assembly-CSharp-firstpass.pdb
