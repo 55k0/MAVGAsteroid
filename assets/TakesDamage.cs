@@ -23,7 +23,11 @@ public class TakesDamage : MonoBehaviour {
 
 	void OnCollisionEnter2D (Collision2D col)
 	{
+<<<<<<< HEAD
 		if (col.gameObject.name.Contains ("Laser") || col.gameObject.name.Contains ("HomingMissle")) 
+=======
+		if (col.gameObject.name.Contains ("Bullet") || col.gameObject.name.Contains ("HomingMissle")) 
+>>>>>>> origin/master
 		{
 
 

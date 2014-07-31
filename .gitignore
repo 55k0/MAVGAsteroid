@@ -45,10 +45,15 @@ Icon
 # =========================
 
 Temp/*
+<<<<<<< HEAD
 Library/*
 
 *.csproj
 *.pidb
 *.unityproj
+=======
+
+*.pidb
+>>>>>>> origin/master
 *.sln
 *.userprefs
