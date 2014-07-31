@@ -97,11 +97,7 @@ public class BasicAI : MonoBehaviour
 
     void Shoot()
     {
-<<<<<<< HEAD
         GameObject bullet = (GameObject)Instantiate(Resources.Load("Laser"),
-=======
-        GameObject bullet = (GameObject)Instantiate(Resources.Load("Bullet"),
->>>>>>> origin/master
                                                           transform.position + transform.up * positionOffset,
                                                           transform.rotation);
 
