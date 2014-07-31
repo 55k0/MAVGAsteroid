@@ -18,6 +18,28 @@ public class PlayerMovement : MonoBehaviour
 	void FixedUpdate () 
     {
 
+		if(Input.GetButton("Up")) {
+
+			rigidbody2D.AddForce(Vector2.up * playerVerticalSpeed);
+
+		}else if(Input.GetButton("Down")) {
+
+			rigidbody2D.AddForce(Vector2.up * playerVerticalSpeed * -1);
+
+		}
+
+		if(Input.GetButton("Left")) {
+
+			rigidbody2D.AddForce(Vector2.right * playerHorizontalSpeed * -1);
+
+		}else if(Input.GetButton("Right")) {
+
+			rigidbody2D.AddForce(Vector2.right * playerHorizontalSpeed);
+
+		}
+
+		/*
+
 		float moveHorizontal = Input.GetAxis ("Horizontal");
 		float moveVertical = Input.GetAxis ("Vertical");
 
@@ -32,6 +54,9 @@ public class PlayerMovement : MonoBehaviour
 		if (Input.GetButton("Fire2")){
 			rigidbody2D.AddForce(new Vector2((rigidbody2D.velocity.x)/-0.25f,(rigidbody2D.velocity.y)/-0.25f));
 		}
+
+		*/
+
     }
 
     Vector3 mousePosition;

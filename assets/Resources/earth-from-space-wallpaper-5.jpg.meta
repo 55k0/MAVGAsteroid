@@ -1,6 +1,8 @@
 fileFormatVersion: 2
 guid: 8d79dc5cc13903b4c9124561c61d0857
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: earth-from-space-wallpaper-5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -24,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: 2
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

@@ -1,6 +1,8 @@
 fileFormatVersion: 2
 guid: fb0804470b9d54140b3a26a84378ee55
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: Enemy_damaged
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
