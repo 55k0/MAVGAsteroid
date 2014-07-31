@@ -21,7 +21,7 @@ public class PlayerShooting : MonoBehaviour {
 
 		if (Input.GetKey (KeyCode.Space) && fireTimer > fireRate) 
 		{
-			GameObject bullet = (GameObject) Instantiate (Resources.Load ("Bullet"), 
+			GameObject bullet = (GameObject) Instantiate (Resources.Load ("Laser"), 
 			                                              transform.position + transform.up * positionOffset, 
 			                                              transform.rotation);		
 
