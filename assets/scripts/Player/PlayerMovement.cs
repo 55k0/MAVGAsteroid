@@ -4,14 +4,14 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour 
 {
 
-    public float playerHorizontalSpeed = 4.0f;
-    public float playerVerticalSpeed = 4.0f;
+    //public float playerHorizontalSpeed = 4.0f;
+    //public float playerVerticalSpeed = 4.0f;
+	public float playerSpeed = 4.0f;
 	public float maxDistance = 50;
-
-
-
+	
 	void Start () 
     {
+
 	}
 	
 
@@ -20,21 +20,21 @@ public class PlayerMovement : MonoBehaviour
 
 		if(Input.GetButton("Up")) {
 
-			rigidbody2D.AddForce(Vector2.up * playerVerticalSpeed);
+			rigidbody2D.AddForce(Vector2.up * playerSpeed);
 
 		}else if(Input.GetButton("Down")) {
 
-			rigidbody2D.AddForce(Vector2.up * playerVerticalSpeed * -1);
+			rigidbody2D.AddForce(Vector2.up * playerSpeed * -1);
 
 		}
 
 		if(Input.GetButton("Left")) {
 
-			rigidbody2D.AddForce(Vector2.right * playerHorizontalSpeed * -1);
+			rigidbody2D.AddForce(Vector2.right * playerSpeed * -1);
 
 		}else if(Input.GetButton("Right")) {
 
-			rigidbody2D.AddForce(Vector2.right * playerHorizontalSpeed);
+			rigidbody2D.AddForce(Vector2.right * playerSpeed);
 
 		}
 
@@ -70,13 +70,22 @@ public class PlayerMovement : MonoBehaviour
         transform.rotation = rot;
         transform.eulerAngles = new Vector3(0, 0, transform.eulerAngles.z);
 
+
+		destroyObjects();
+
+    }
+
+	void destroyObjects() {
+
 		object[] objects = GameObject.FindObjectsOfType(typeof (GameObject));
-		
+
 		foreach (GameObject obj in objects) {
 			if((obj.transform.position - this.transform.position).magnitude > maxDistance)
 			{
 				Destroy (obj);
 			}
 		}
-    }
+
+	}
+
 }
