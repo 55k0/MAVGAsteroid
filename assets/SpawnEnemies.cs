@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SpawnEnemies : MonoBehaviour {
 	
-	
+	public bool spawnEnemies = true;
 	public float spawnRate = 5.0f;
 	public float cutOffNear = 2.0f;
 	public float spawnRadius = 7.0f;
@@ -25,14 +25,20 @@ public class SpawnEnemies : MonoBehaviour {
 
     void Spawn()
     {
+
         if (spawnTimer >= spawnRate)
         {
             spawnTimer -= spawnRate;
+
+			if(spawnEnemies) {
 
             Vector2 pos = (Random.insideUnitCircle * Random.Range(cutOffNear, spawnRadius)) + gameObject.rigidbody2D.position;
 
             Instantiate(Resources.Load("Enemy"), pos, Quaternion.identity);
 
+			}
+
         }
     }
+
 }
